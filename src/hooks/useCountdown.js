@@ -14,16 +14,19 @@ function useCountdown() {
                 setIsEnded(false);
                 setMinutes(25);
                 setSeconds(0);
+                document.title = 'Time to focus! - TomatoTimer';
                 break;
             case 'short break':
                 setIsEnded(false);
                 setMinutes(5);
                 setSeconds(0);
+                document.title = 'Time for a short break! - TomatoTimer';
                 break;
             case 'long break':
                 setIsEnded(false);
                 setMinutes(15);
                 setSeconds(0);
+                document.title = 'Time for a long break! - TomatoTimer';
                 break;
         }
     }, [state.counter])

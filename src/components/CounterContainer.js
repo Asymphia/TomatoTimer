@@ -12,7 +12,12 @@ const CounterContainer = () => {
     const [isStarted, setIsStarted] = useState(false);
     const [pomodoroCounter, setPomodoroCounter] = useState(0);
 
-    const handleClick = () => {
+    const handleClick = (name) => {
+        setPomodoroCounter(0);
+        dispatch({type: name});
+    }
+
+    const handleStartClick = () => {
         setIsStarted(prevState => !prevState);
         togglePause();
     }
@@ -43,18 +48,19 @@ const CounterContainer = () => {
       <div className='
       bg-white-translucent
       rounded-[30px]
-      w-[870px] h-fit
+      lg:w-[870px] md:w-[87%] w-[95%]
+      h-fit
       absolute inset-1/2 -translate-x-1/2 -translate-y-1/2
       p-vlg space-y-vlg
       flex flex-wrap justify-center
       '>
-          <div className='w-full h-fit flex flex-nowrap justify-center space-x-vlg'>
-            <Button key={1} name={'Pomodoro'} onClick={() => dispatch({type: 'pomodoro'})} />
-            <Button key={2} name={'Short Break'} onClick={() => dispatch({type: 'short break'})} />
-            <Button key={3} name={'Long Break'} onClick={() => dispatch({type: 'long break'})} />
+          <div className='w-full h-fit flex flex-nowrap justify-center lg:space-x-vlg md:space-x-lg space-x-md'>
+            <Button key={1} name={'Pomodoro'} onClick={() => handleClick('pomodoro')} />
+            <Button key={2} name={'Short Break'} onClick={() => handleClick('short break')} />
+            <Button key={3} name={'Long Break'} onClick={() => handleClick('long break')} />
           </div>
           <Counter time={formattedTime} />
-          <StartButton onClick={handleClick} name={isStarted ? 'pause' : 'start'} />
+          <StartButton onClick={handleStartClick} name={isStarted ? 'pause' : 'start'} />
       </div>
     );
 }

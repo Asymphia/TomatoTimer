@@ -21,7 +21,7 @@ const StartButton = ({onClick, name}) => {
 
     return (
       <button className={`
-      ${theme.color} text-lg uppercase
+      ${theme.color} md:text-lg text-sm-lg uppercase
       px-lg py-vsm
       bg-white
       rounded-full

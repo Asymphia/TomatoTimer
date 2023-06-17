@@ -20,10 +20,10 @@ const Header = () => {
     }, [state.counter]);
 
     return (
-      <header className='w-full h-vlg font-bold text-lg'>
+      <header className='w-full h-vlg font-bold md:text-lg text-sm-lg'>
           <div className='flex flex-nowrap items-center justify-center space-x-sm p-vsm'>
-              <img src={logo} alt='logo' className='h-md' />
-              <h1>TomatoTrack</h1>
+              <img src={logo} alt='logo' className='md:h-md h-[24px]' />
+              <h1>TomatoTimer</h1>
           </div>
           <hr className={`border-solid transition ${color} border-[1px] w-[80%] m-auto`} />
       </header>

@@ -25,7 +25,7 @@ const Button = ({name, onClick}) => {
 
     return (
         <button className={`
-        text-md
+        md:text-md text-sm-md
         border-solid border-[2px] rounded-full
         px-sm py-vsm ${color}
         transition
