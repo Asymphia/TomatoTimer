@@ -25,6 +25,7 @@ const Button = ({name, onClick}) => {
 
     return (
         <button className={`
+        md:w-fit w-full
         md:text-md text-sm-md
         border-solid border-[2px] rounded-full
         px-sm py-vsm ${color}

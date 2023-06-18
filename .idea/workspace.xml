@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06741c1e-426a-4188-a68e-1ffa8360993e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/playSound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/ring.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterContainer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/components/CounterContainer.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,7 +66,11 @@
       <updated>1686991327598</updated>
       <workItem from="1686991329420" duration="17515000" />
       <workItem from="1687020467088" duration="1560000" />
-      <workItem from="1687022255730" duration="239000" />
+      <workItem from="1687022255730" duration="1800000" />
+      <workItem from="1687024420296" duration="370000" />
+      <workItem from="1687026741204" duration="1305000" />
+      <workItem from="1687097487996" duration="37000" />
+      <workItem from="1687098891645" duration="1454000" />
     </task>
     <servers />
   </component>

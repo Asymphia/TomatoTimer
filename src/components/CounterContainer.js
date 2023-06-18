@@ -1,6 +1,7 @@
 import { GlobalContext } from "../providers/GlobalProvider";
 import {useContext, useState, useEffect} from "react";
 import useCountdown from "../hooks/useCountdown";
+import { playSound } from './playSound';
 
 import Button from "./Button";
 import Counter from "./Counter";
@@ -24,6 +25,7 @@ const CounterContainer = () => {
 
     useEffect(() => {
         if(isEnded){
+            playSound();
             if(pomodoroCounter === 4 && state.counter === 'pomodoro'){
                 dispatch({type: 'long break'});
             } else {
@@ -45,23 +47,23 @@ const CounterContainer = () => {
     }, [isEnded]);
 
     return (
-      <div className='
-      bg-white-translucent
-      rounded-[30px]
-      lg:w-[870px] md:w-[87%] w-[95%]
-      h-fit
-      absolute inset-1/2 -translate-x-1/2 -translate-y-1/2
-      p-vlg space-y-vlg
-      flex flex-wrap justify-center
-      '>
-          <div className='w-full h-fit flex flex-nowrap justify-center lg:space-x-vlg md:space-x-lg space-x-md'>
-            <Button key={1} name={'Pomodoro'} onClick={() => handleClick('pomodoro')} />
-            <Button key={2} name={'Short Break'} onClick={() => handleClick('short break')} />
-            <Button key={3} name={'Long Break'} onClick={() => handleClick('long break')} />
-          </div>
-          <Counter time={formattedTime} />
-          <StartButton onClick={handleStartClick} name={isStarted ? 'pause' : 'start'} />
-      </div>
+        <div className='
+         bg-white-translucent
+         rounded-[30px]
+         lg:w-[870px] md:w-[87%] w-[95%]
+         h-fit
+         absolute inset-1/2 -translate-x-1/2 -translate-y-1/2
+         p-vlg space-y-vlg
+         flex flex-wrap justify-center
+        '>
+            <div className='w-full h-fit flex md:flex-nowrap flex-wrap justify-center lg:space-x-vlg md:space-x-lg md:space-y-0 space-y-sm space-x-0'>
+                <Button key={1} name={'Pomodoro'} onClick={() => handleClick('pomodoro')} />
+                <Button key={2} name={'Short Break'} onClick={() => handleClick('short break')} />
+                <Button key={3} name={'Long Break'} onClick={() => handleClick('long break')} />
+            </div>
+            <Counter time={formattedTime} />
+            <StartButton onClick={handleStartClick} name={isStarted ? 'pause' : 'start'} />
+        </div>
     );
 }
 
