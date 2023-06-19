@@ -15,7 +15,7 @@ const CounterContainer = () => {
 
     const handleClick = (name) => {
         setPomodoroCounter(0);
-        dispatch({type: name});
+        dispatch({type: "SET_COUNTER", payload: name});
     }
 
     const handleStartClick = () => {
@@ -25,21 +25,21 @@ const CounterContainer = () => {
 
     useEffect(() => {
         if(isEnded){
-            playSound();
+            playSound(state.volume);
             if(pomodoroCounter === 4 && state.counter === 'pomodoro'){
-                dispatch({type: 'long break'});
+                dispatch({type: "SET_COUNTER", payload: 'long break'});
             } else {
                 switch(state.counter){
                     case 'pomodoro':
-                        dispatch({type: 'short break'});
+                        dispatch({type: "SET_COUNTER", payload: 'short break'});
                         break;
                     case 'short break':
                         setPomodoroCounter(prevState => prevState + 1);
-                        dispatch({type: 'pomodoro'});
+                        dispatch({type: "SET_COUNTER", payload: 'pomodoro'});
                         break;
                     case 'long break':
                         setPomodoroCounter(0);
-                        dispatch({type: 'pomodoro'});
+                        dispatch({type: "SET_COUNTER", payload: 'pomodoro'});
                         break;
                 }
             }

@@ -1,26 +1,54 @@
-import {createContext, useEffect, useReducer} from "react";
+import { createContext, useReducer } from "react";
 
 export const GlobalContext = createContext();
 
-function reducer (state, action) {
+const initialState = {
+    counter: "pomodoro",
+    duration: {
+        pomodoro: 25,
+        shortBreak: 5,
+        longBreak: 15
+    },
+    volume: 10
+};
+
+function reducer(state, action) {
     switch (action.type) {
-        case 'pomodoro':
-            return { counter: 'pomodoro' };
-        case 'short break':
-            return { counter: 'short break' };
-        case 'long break':
-            return { counter: 'long break' };
+        case "SET_COUNTER":
+            return {
+                ...state,
+                counter: action.payload
+            };
+        case "SET_DURATION":
+            return {
+                ...state,
+                duration: {
+                    ...state.duration,
+                    ...action.payload
+                }
+            };
+        case "SET_VOLUME":
+            console.log(action.payload);
+            return {
+                ...state,
+                volume: action.payload
+            };
         default:
-            return { counter: state.counter };
+            return state;
     }
 }
 
 export const GlobalProvider = ({ children }) => {
-    const [state, dispatch] = useReducer(reducer, { counter: 'pomodoro' });
+    const [state, dispatch] = useReducer(reducer, initialState);
+
+    //useEffect(() => {
+        // Zapisz stan do localStorage po każdej zmianie
+        //localStorage.setItem("globalState", JSON.stringify(state));
+    //}, [state]);
 
     return (
-      <GlobalContext.Provider value={[state, dispatch]}>
-          {children}
-      </GlobalContext.Provider>
+        <GlobalContext.Provider value={[state, dispatch]}>
+            {children}
+        </GlobalContext.Provider>
     );
-}
+};

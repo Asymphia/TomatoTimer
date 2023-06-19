@@ -12,19 +12,19 @@ function useCountdown() {
         switch (state.counter){
             case 'pomodoro':
                 setIsEnded(false);
-                setMinutes(25);
+                setMinutes(state.duration.pomodoro);
                 setSeconds(0);
                 document.title = 'Time to focus! - TomatoTimer';
                 break;
             case 'short break':
                 setIsEnded(false);
-                setMinutes(5);
+                setMinutes(state.duration.shortBreak);
                 setSeconds(0);
                 document.title = 'Time for a short break! - TomatoTimer';
                 break;
             case 'long break':
                 setIsEnded(false);
-                setMinutes(15);
+                setMinutes(state.duration.longBreak);
                 setSeconds(0);
                 document.title = 'Time for a long break! - TomatoTimer';
                 break;
