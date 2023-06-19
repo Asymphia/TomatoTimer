@@ -1,6 +1,6 @@
 {
   "name": "tomatotimer",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

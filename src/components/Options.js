@@ -8,6 +8,8 @@ const Options = () => {
     const [longBreak, setLongBreak] = useState(state.duration.longBreak);
     const [volume, setVolume] = useState(state.volume);
 
+    document.title = 'TomatoTimer - options';
+
     const handleDurationChange = () => {
         if(pomodoro < 1){
             setPomodoro(1);
@@ -42,8 +44,8 @@ const Options = () => {
 
     return (
         <div className='py-vlg flex flex-wrap justify-around'>
-            <label className='w-full text-center'>
-                <p>Pomodoro duration:</p>
+            <label className='w-full text-center text-sm-md'>
+                <p className='mb-vsm'>Pomodoro duration:</p>
                 <input
                     type="number"
                     min="1"
@@ -51,11 +53,11 @@ const Options = () => {
                     value={pomodoro}
                     onChange={(e) => setPomodoro(e.target.value)}
                     onBlur={handleDurationChange}
-                    className="text-black p-vsm rounded-[30px] focus:outline-none mb-md sm:w-[350px] w-full"
+                    className="text-black py-vsm px-sm rounded-[30px] focus:outline-none mb-md sm:w-[350px] w-full"
                 />
             </label>
-            <label className='w-full text-center'>
-                <p className='text-center'>Short break duration:</p>
+            <label className='w-full text-center text-sm-md'>
+                <p className='mb-vsm'>Short break duration:</p>
                 <input
                     type="number"
                     min="1"
@@ -63,11 +65,11 @@ const Options = () => {
                     value={shortBreak}
                     onChange={(e) => setShortBreak(e.target.value)}
                     onBlur={handleDurationChange}
-                    className="text-black p-vsm rounded-[30px] focus:outline-none mb-md sm:w-[350px] w-full"
+                    className="text-black py-vsm px-sm rounded-[30px] focus:outline-none mb-md sm:w-[350px] w-full"
                 />
             </label>
-            <label className='w-full text-center'>
-                <p className='text-center'>Long break duration:</p>
+            <label className='w-full text-center text-sm-md'>
+                <p className='mb-vsm'>Long break duration:</p>
                 <input
                     type="number"
                     min="1"
@@ -75,11 +77,11 @@ const Options = () => {
                     value={longBreak}
                     onChange={(e) => setLongBreak(e.target.value)}
                     onBlur={handleDurationChange}
-                    className="text-black p-vsm rounded-[30px] focus:outline-none mb-md sm:w-[350px] w-full"
+                    className="text-black py-vsm px-sm rounded-[30px] focus:outline-none mb-md sm:w-[350px] w-full"
                 />
             </label>
-            <label className='w-full text-center'>
-                <p className='text-center'>Alarm volume:</p>
+            <label className='w-full text-center text-sm-md'>
+                <p className='mb-vsm'>Alarm volume:</p>
                 <input
                     type="range"
                     value={volume}

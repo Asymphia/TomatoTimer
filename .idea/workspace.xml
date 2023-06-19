@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06741c1e-426a-4188-a68e-1ffa8360993e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/optionsLogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/playSound.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/playSound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useCountdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useCountdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/GlobalProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/GlobalProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Options.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Options.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +83,8 @@
       <workItem from="1687098891645" duration="1454000" />
       <workItem from="1687178961091" duration="7233000" />
       <workItem from="1687195881561" duration="2952000" />
+      <workItem from="1687199076434" duration="480000" />
+      <workItem from="1687199578099" duration="24000" />
     </task>
     <servers />
   </component>
