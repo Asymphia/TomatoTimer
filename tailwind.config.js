@@ -26,9 +26,13 @@ module.exports = {
         "xl": "128px",
         "lg": "32px",
         "md": "24px",
+        "sm": "20px",
+        "vsm": "18px",
         "sm-xl": "100px",
         "sm-lg": "24px",
         "sm-md": "20px",
+        "sm-sm": "18px",
+        "vsm-sm": "16px"
       },
       boxShadow: {
         "red": "0px 3px 0px 1px rgba(135, 48, 43, 1)",

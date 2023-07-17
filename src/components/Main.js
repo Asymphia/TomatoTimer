@@ -1,8 +1,8 @@
 import Header from "./Header";
-import CounterContainer from "./CounterContainer";
 import {GlobalContext} from "../providers/GlobalProvider";
 import {useContext, useState, useLayoutEffect} from "react";
 import { Outlet } from "react-router-dom";
+import Info from "./Info";
 
 const Main = () => {
     const [state, dispatch] = useContext(GlobalContext);
@@ -22,9 +22,12 @@ const Main = () => {
     }, [state.counter])
 
     return (
+        <div className="overflow-x-hidden">
         <div className={`w-screen h-screen transition ${bgColor} text-white relative overflow-hidden`} >
             <Header />
             <Outlet />
+        </div>
+            <Info />
         </div>
     );
 }
