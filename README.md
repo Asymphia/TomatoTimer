@@ -2,6 +2,8 @@
 
 TomatoTimer is a simple pomodoro timer application designed to help you manage your time effectively and improve your productivity. It is based on the Pomodoro technique, which consists in dividing work into 25-minute intervals, separated by short breaks, and long breaks after several work intervals.
 
+![screenshot from the TomatoTimer app](./src/img/TomatoTimer.png)
+
 ## Installation
 
 To use TomatoTimer, follow these steps:
