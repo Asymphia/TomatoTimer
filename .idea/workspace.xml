@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="06741c1e-426a-4188-a68e-1ffa8360993e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Options.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/GlobalProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/GlobalProvider.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +37,10 @@
     <setting file="file://$PROJECT_DIR$/src/components/Main.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/providers/GlobalProvider.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/playSound.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Button.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/hooks/useCountdown.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Header.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/StartButton.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -84,7 +87,8 @@
       <workItem from="1687178961091" duration="7233000" />
       <workItem from="1687195881561" duration="2952000" />
       <workItem from="1687199076434" duration="480000" />
-      <workItem from="1687199578099" duration="24000" />
+      <workItem from="1687199578099" duration="676000" />
+      <workItem from="1689588686064" duration="308000" />
     </task>
     <servers />
   </component>

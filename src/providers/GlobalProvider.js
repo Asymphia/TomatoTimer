@@ -41,11 +41,6 @@ function reducer(state, action) {
 export const GlobalProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
-    //useEffect(() => {
-        // Zapisz stan do localStorage po każdej zmianie
-        //localStorage.setItem("globalState", JSON.stringify(state));
-    //}, [state]);
-
     return (
         <GlobalContext.Provider value={[state, dispatch]}>
             {children}
